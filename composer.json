@@ -1,0 +1,32 @@
+{
+    "name": "loganhenson/calendar",
+    "version": "1.0.0",
+    "description": "Calendar Generation Made Simple",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Logan Henson",
+            "email": "logan@loganhenson.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "~1.13"
+    },
+    "autoload": {
+      "psr-4": {
+        "loganhenson\\": "src"
+      }
+    },
+    "scripts": {
+      "post-install-cmd": [
+        "composer dump-autoload -o"
+      ],
+      "post-update-cmd": [
+        "composer dump-autoload -o"
+      ],
+      "test": "phpunit --bootstrap vendor/autoload.php tests"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    }
+}
