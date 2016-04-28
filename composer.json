@@ -1,6 +1,6 @@
 {
     "name": "loganhenson/calendar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Calendar Generation Made Simple",
     "license": "MIT",
     "authors": [
@@ -23,10 +23,6 @@
       ],
       "post-update-cmd": [
         "composer dump-autoload -o"
-      ],
-      "test": "phpunit --bootstrap vendor/autoload.php tests"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.5"
+      ]
     }
 }
