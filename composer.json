@@ -1,6 +1,6 @@
 {
     "name": "loganhenson/calendar",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Calendar Generation Made Simple",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "nesbot/carbon": "~1.13"
+        "nesbot/carbon": "^1.21"
     },
     "autoload": {
       "psr-4": {
@@ -23,6 +23,10 @@
       ],
       "post-update-cmd": [
         "composer dump-autoload -o"
-      ]
+      ],
+      "test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
     }
 }

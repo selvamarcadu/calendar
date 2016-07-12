@@ -73,6 +73,7 @@ class Calendar{
             //add month
             $generated_year['months'][] = ['month' => [
                 'month' => $month,
+                'year' => $this->now->year,
                 'pretty' => Carbon::create(null, $month)->format('F')
             ], 'weeks' => []];
 
